@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.support.animation.SpringAnimation;
 import android.support.animation.SpringForce;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -106,6 +107,7 @@ public class FlexibleAnimitionActivity extends Activity implements View.OnClickL
         set.playTogether(scaleX, scaleY);
         set.start();
     }
+
 
     private void onScaleAnimationBySpringWayTwo() {
         SpringSystem springSystem = SpringSystem.create();

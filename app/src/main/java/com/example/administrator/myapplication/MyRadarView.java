@@ -70,6 +70,7 @@ public class MyRadarView extends View {
         centerX = w / 2;
         centerY = h / 2;
         postInvalidate();
+//        invalidate();
     }
 
     @Override
