@@ -49,6 +49,12 @@
             android:layout_height="wrap_content"
             android:text="弹性动画练习"/>
 
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿qq底部导航手势跟随动画"/>
+
     </LinearLayout>
 
 </ScrollView>
