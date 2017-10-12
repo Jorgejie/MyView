@@ -29,6 +29,7 @@ postInvalidate();源码当中调用了handler发送延迟消息到主线程默�
 因此如果View只需要重绘而不需要测量，布局的时候，使用invalidate方法往往比requestLayout方法更高效。
 
 ## 3.自定义view的四个构造方法的作用以及区别
+http://blog.csdn.net/zhao123h/article/details/52210732(参考这个介绍)
 
 
 
