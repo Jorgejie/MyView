@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="QQNaviView">
+    <declare-styleable name="QQMenuNavigation">
         <attr name="bigIconSrc" format="reference"/>
         <attr name="smallIconSrc" format="reference"/>
         <attr name="iconWidth" format="dimension"/>
         <attr name="iconHeight" format="dimension"/>
         <attr name="range" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatingStarView">
+        <!--星星点亮-->
+        <attr name="star_on" format="reference"></attr>
+        <!--星星关闭-->
+        <attr name="star_off" format="reference"></attr>
+        <!--半颗星星-->
+        <attr name="star_half" format="reference"></attr>
+        <!--是否可以点击滑动评分-->
+        <attr name="isRatable" format="boolean"></attr>
+        <!--星星之间间距-->
+        <attr name="star_padding" format="dimension"></attr>
     </declare-styleable>
 </resources>

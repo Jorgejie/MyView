@@ -52,17 +52,18 @@ public class QQMenuNavigation extends LinearLayout {
         super(context, attrs, defStyleAttr);
         mContext = context;
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.QQNaviView, defStyleAttr, 0);
-        mBigPic = typedArray.getResourceId(R.styleable.QQNaviView_bigIconSrc, R.drawable.bubble_big);
-        mSmallPic = typedArray.getResourceId(R.styleable.QQNaviView_bigIconSrc, R.drawable.bubble_small);
-        mIconWidth = typedArray.getDimension(R.styleable.QQNaviView_iconWidth, dp2px(context, 60));
-        mIconHeight = typedArray.getDimension(R.styleable.QQNaviView_iconHeight, dp2px(context, 60));
-        mRange = typedArray.getFloat(R.styleable.QQNaviView_range, 1);
+        mBigPic = typedArray.getResourceId(R.styleable.QQMenuNavigation_bigIconSrc, R.drawable.bubble_big);
+        mSmallPic = typedArray.getResourceId(R.styleable.QQMenuNavigation_bigIconSrc, R.drawable.bubble_small);
+        mIconWidth = typedArray.getDimension(R.styleable.QQMenuNavigation_iconWidth, dp2px(context, 60));
+        mIconHeight = typedArray.getDimension(R.styleable.QQMenuNavigation_iconHeight, dp2px(context, 60));
+        mRange = typedArray.getFloat(R.styleable.QQMenuNavigation_range, 1);
         typedArray.recycle();
 
         //默认垂直排序
         setOrientation(LinearLayout.VERTICAL);
         init(context);
     }
+
 
     private void init(Context context) {
         mView = inflate(context, R.layout.view_icon, null);

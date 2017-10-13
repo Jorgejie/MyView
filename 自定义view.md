@@ -30,6 +30,9 @@ postInvalidate();源码当中调用了handler发送延迟消息到主线程默�
 
 ## 3.自定义view的四个构造方法的作用以及区别
 http://blog.csdn.net/zhao123h/article/details/52210732(参考这个介绍)
+可参考源码解析,并且具体的用法可以查看TextView的源码
+
+属性赋值优先级   Xml定义 > xml的style定义 > defStyleAttr > defStyleRes> theme直接定义
 
 
 
