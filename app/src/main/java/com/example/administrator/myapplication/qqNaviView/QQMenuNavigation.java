@@ -15,9 +15,6 @@ import android.widget.LinearLayout;
 
 import com.example.administrator.myapplication.R;
 
-import static android.R.attr.x;
-import static android.R.attr.y;
-
 
 /**
  * Created by Jorgejie on 2017/10/9.
@@ -51,7 +48,7 @@ public class QQMenuNavigation extends LinearLayout {
     public QQMenuNavigation(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.QQNaviView, defStyleAttr, 0);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.QQMenuNavigation, defStyleAttr, 0);
         mBigPic = typedArray.getResourceId(R.styleable.QQMenuNavigation_bigIconSrc, R.drawable.bubble_big);
         mSmallPic = typedArray.getResourceId(R.styleable.QQMenuNavigation_bigIconSrc, R.drawable.bubble_small);
         mIconWidth = typedArray.getDimension(R.styleable.QQMenuNavigation_iconWidth, dp2px(context, 60));

@@ -10,4 +10,5 @@
     <string name="title_activity_4">Activity4</string>
     <string name="title_activity_flexible_animition">FlexibleAnimitionActivity</string>
     <string name="title_activity_qq_navi_view">QqNaviViewActivity</string>
+    <string name="title_activity_rating">RatingActivity</string>
 </resources>

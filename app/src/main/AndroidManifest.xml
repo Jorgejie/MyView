@@ -43,6 +43,10 @@
             android:name=".QqNaviViewActivity"
             android:label="@string/title_activity_qq_navi_view">
         </activity>
+        <activity
+            android:name=".RatingActivity"
+            android:label="@string/title_activity_rating">
+        </activity>
     </application>
 
 </manifest>

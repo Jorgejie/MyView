@@ -6,18 +6,20 @@
         <attr name="iconWidth" format="dimension"/>
         <attr name="iconHeight" format="dimension"/>
         <attr name="range" format="float"/>
-    </declare-styleable>
 
+
+    </declare-styleable>
     <declare-styleable name="RatingStarView">
         <!--星星点亮-->
-        <attr name="star_on" format="reference"></attr>
+        <attr name="star_on" format="reference"/>
         <!--星星关闭-->
-        <attr name="star_off" format="reference"></attr>
+        <attr name="star_off" format="reference"/>
         <!--半颗星星-->
-        <attr name="star_half" format="reference"></attr>
+        <attr name="star_half" format="reference"/>
         <!--是否可以点击滑动评分-->
-        <attr name="isRatable" format="boolean"></attr>
+        <attr name="isRatable" format="boolean"/>
         <!--星星之间间距-->
-        <attr name="star_padding" format="dimension"></attr>
+        <attr name="star_padding" format="dimension"/>
     </declare-styleable>
+
 </resources>

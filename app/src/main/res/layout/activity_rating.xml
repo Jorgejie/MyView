@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication.RatingActivity">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        />
+    <com.example.administrator.myapplication.ratingstar.RatingStarView
+        android:id="@+id/srv_ratable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        app:star_on="@drawable/star_on"
+        app:star_off="@drawable/star_off"
+        android:layout_centerInParent="true"
+        app:star_half="@drawable/star_helf"
+        app:star_padding="10dp"
+        app:isRatable="true">
+        ></com.example.administrator.myapplication.ratingstar.RatingStarView>
+</RelativeLayout>
