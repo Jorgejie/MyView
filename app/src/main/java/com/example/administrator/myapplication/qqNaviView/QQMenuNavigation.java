@@ -147,7 +147,7 @@ public class QQMenuNavigation extends LinearLayout {
         super.onLayout(changed, l, t, r, b);
         int childleft;
         int childTop = 0;
-        for (int i = 0; i < getChildCount(); i++) {//此处一共包含两个子view,一个是图片,另外一个就是textView
+        for (int i = 0; i < getChildCount(); i++) {//此处一共包含两个子view,自上而下一个是图片,另外一个就是textView
             final View child = getChildAt(i);
             LayoutParams lp = (LayoutParams) child.getLayoutParams();
             if (child.getVisibility() != GONE) {

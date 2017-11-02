@@ -12,7 +12,7 @@ onSizeChange　此方法调用在回调onLayout之前　一般在视图大小发
 
 ***
 
-## 2.自定义view中的两个刷新方法的区别##
+## 2.自定义view中的三个刷新方法的区别##
 
 requestLayout();  这个方法在什么时候会用到?  了解下这个http://blog.csdn.net/a553181867/article/details/51583060,
 http://www.jianshu.com/p/687010ccad66(浅谈DecorView与ViewRootImpl两者的区别)
