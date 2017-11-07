@@ -28,8 +28,8 @@ public class RatingActivity extends Activity {
 //                tv.setText(rate+"分");
             }
         });
-//        rnhsv.setIsRatable(false);
-        int mark = 10;
+        rnhsv.setIsRatable(false);
+        int mark = 6;
         rnhsv.setStarCountByUser(this, mark/2);
         rnhsv.setRateNotRatable(mark);
         rnhsv.setOnRateChangeListener(new RatingNoHalfStarView.OnRateChangeListener() {

@@ -63,7 +63,7 @@ public class RatingNoHalfStarView extends LinearLayout {
 
 
     /**
-     * 用来处理已评价过后的星星的显示(只显示变色的,不显示不变色的)
+     * 确定星星个数
      */
     public void setStarCountByUser(Context context, int starCount) {
         ImageView imageView;
@@ -108,11 +108,18 @@ public class RatingNoHalfStarView extends LinearLayout {
         return true;
     }
 
+    /**
+     * 设置是否可以被点击以及滑动评分
+     */
     public void setIsRatable(boolean isRatable) {
         mIsRatable = isRatable;
     }
 
 
+    /**
+     * 根据已知分数确定星星个数
+     * @param mark
+     */
     public void setRateNotRatable(int mark) {
         removeAllViews();
         int count = mark / 2;
@@ -152,7 +159,6 @@ public class RatingNoHalfStarView extends LinearLayout {
      */
     public interface OnRateChangeListener {
         void onRateChange(int rate);
-
     }
 
     private int calculateStar(float x) {
