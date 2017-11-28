@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.administrator.myapplication.animibutton.AnimButtonActivity;
 import com.example.administrator.myapplication.ratingstar.RatingStarView;
 
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn5 = (Button) findViewById(R.id.btn5);
         Button btn6 = (Button) findViewById(R.id.btn6);
         Button btn7 = (Button) findViewById(R.id.btn7);
+        Button btn8 = (Button) findViewById(R.id.btn8);
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5.setOnClickListener(this);
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn7:
                 RatingActivity.start(MainActivity.this);
+                break;
+            case R.id.btn8:
+                AnimButtonActivity.start(MainActivity.this);
                 break;
         }
     }

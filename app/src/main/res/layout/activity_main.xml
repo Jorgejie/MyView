@@ -61,6 +61,12 @@
             android:layout_height="wrap_content"
             android:text="评分"/>
 
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button_动画"/>
+
     </LinearLayout>
 
 </ScrollView>

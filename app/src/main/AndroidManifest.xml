@@ -47,6 +47,10 @@
             android:name=".RatingActivity"
             android:label="@string/title_activity_rating">
         </activity>
+        <activity
+            android:name=".animibutton.AnimButtonActivity"
+            android:label="@string/title_activity_anim_button">
+        </activity>
     </application>
 
 </manifest>
